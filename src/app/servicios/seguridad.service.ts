@@ -51,6 +51,11 @@ export class SeguridadService {
       return null;
     }
    }
+
+   ObtenerDatosUsuarioSession(){
+    return this.datosUsuarioEnSesion.asObservable();
+   }
+   
    EliminarInformacionSesion(){
     localStorage.removeItem("datosSesion");
     this.RefrescarDatosSesion(new ModeloIdentificar());
