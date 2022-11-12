@@ -4,15 +4,15 @@
     <article class="col s6 offset-s3">
         <form [formGroup]="fgValidador" (ngSubmit)="GuardarProducto()"  method="post" action="formulario-contacto.php">
             <div class="input-field">
-                <label for="nombre">Nombre</label>
+                <label for="nombre" class="active">Nombre</label>
                 <input formControlName="nombre" for="text" name="nombre" required>
             </div>
             <div class="input-field">
-                <label for="precio">Precio</label>
+                <label for="precio" class="active">Precio</label>
                 <input formControlName="precio" for="text" name="precio" required>
             </div>
             <div class="input-field">
-                <label for="imagen">Imagen</label>
+                <label for="imagen" class="active">Imagen</label>
                 <input formControlName="imagen" for="text" name="Imagen" required>
             </div> 
             <p class="center-align">
