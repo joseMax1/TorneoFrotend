@@ -30,7 +30,6 @@ export class SeguridadService {
       clave: clave
     },{
       headers:new HttpHeaders({
-
       })
     })
    }
@@ -64,5 +63,15 @@ export class SeguridadService {
    seHaIniciadoSesion(){
     let datosString = localStorage.getItem("datosSesion");
     return datosString;
+   }
+
+   ObtenerToken(){
+    let datosString = localStorage.getItem("datosSesion");
+    if(datosString){
+      let datos = JSON.parse(datosString);
+      return datos.tk;
+    }else{
+      return '';
+    }
    }
 }
