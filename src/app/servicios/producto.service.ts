@@ -19,7 +19,7 @@ export class ProductoService {
     return this.http.get<ModeloProducto[]>(`${this.url}/productos`);
   }
 
-  ObtenerRegistrosPorId(id: String): Observable<ModeloProducto> {
+  ObtenerRegistrosPorId(id: string): Observable<ModeloProducto> {
     return this.http.get<ModeloProducto>(`${this.url}/productos/${id}`);
   }
 
