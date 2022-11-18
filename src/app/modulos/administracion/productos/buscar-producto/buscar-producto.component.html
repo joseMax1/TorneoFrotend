@@ -1,5 +1,7 @@
-<a routerLink="/administracion/crear-producto" class="btn">Nuevo producto</a>
+<br><br>
 
+<a routerLink="/administracion/crear-producto" class="btn">Agregar Nuevo Jugador</a>
+<br><br>
 <table class="table responsive">
     <thead>
         <tr>
@@ -7,10 +9,10 @@
             Nombre
         </th>
         <th>
-            Precio
+            Edad
         </th>
         <th>
-            Imagen
+            Foto
         </th>
         <th>
             Editar
@@ -29,7 +31,7 @@
                 <img src="{{p.imagen}}" class="imagenProducto"/>
             </td>
             <td>
-                <a routerLink="/administracion/editar-producto/{{p.id}}" class="btn">Editar Producto</a>
+                <a routerLink="/administracion/editar-producto/{{p.id}}" class="btn">Editar Jugador</a>
             </td>
         </tr>
     </tbody>

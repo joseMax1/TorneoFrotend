@@ -1,5 +1,5 @@
 <div class="row">
-    <h3 class="center-align">Crear Productos</h3>
+    <h3 class="center-align">Registrar Jugador</h3>
     <article class="col s6 offset-s3">
         <form [formGroup]="fgValidador" (ngSubmit)="EditarProducto()"  method="Post" action="formulario-contacto.php">
             <input type="hidden" formControlName="id" />
@@ -8,11 +8,11 @@
                 <input formControlName="nombre" for="text" name="nombre" required>
             </div>
             <div class="input-field">
-                <label for="precio" class="active">Precio</label>
+                <label for="precio" class="active">Edad</label>
                 <input formControlName="precio" for="text" name="precio" required>
             </div>
             <div class="input-field">
-                <label for="imagen" class="active">Imagen</label>
+                <label for="imagen" class="active">Foto</label>
                 <input formControlName="imagen" for="text" name="Imagen" required>
             </div> 
             <p class="center-align">

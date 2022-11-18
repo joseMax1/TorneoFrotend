@@ -27,6 +27,16 @@ const routes: Routes = [
     loadChildren: () => import("./modulos/pedidos/pedidos.module").then(x => x.PedidosModule)
   },
   {
+    path: 'resultado',
+    loadChildren: () => import("./modulos/resultado/resultado.module").then(x=> x.ResultadoModule)
+  },
+
+  {
+    path: 'tabla',
+    loadChildren: () => import("./modulos/tabla/tabla.module").then(x => x.TablaModule)
+  },
+  
+  {
     path: '**',
     component: ErrorComponent
     
